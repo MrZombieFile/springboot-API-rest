@@ -29,8 +29,6 @@ public class FlowerController {
             @ApiResponse(code = 404, message = "not found!!!") })
 
 
-
-
     @ApiOperation(value = "Get all", response = FlowerEntityDTO.class, tags = "get All")
     @GetMapping("/getAll")
     public ResponseEntity<List<FlowerEntityDTO>> getAllFlowers(){
